@@ -14,6 +14,13 @@ const movies = [
         url_video: "https://drive.google.com/uc?id=1eoff-4Yj0CAVDG8pTxJ_L_mKCfl46MF8",
         categoria: "Acción",
         descripcion: "Los Guardianes deben luchar para mantener unida a su nueva familia. Cambia este texto por tu propia descripción."
+    },
+    {
+        titulo: "Guardianes de la Galaxia Vol. 3",
+        imagen: "assets/Guardianes3.jpg",
+        url_video: "https://drive.google.com/uc?id=1XBkD4WAhKXWGGgq-4k8Ymykxc9TpsoT5",
+        categoria: "Ciencia Ficción",
+        descripcion: "Peter Quill debe reunir a su equipo para defender el universo y proteger a uno de los suyos. Cambia este texto por tu propia descripción."
     }
 ];
 
