@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Colección de Películas</title>
+    <meta name="description" content="Colección personal de películas estilo Netflix">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">MisPelis</h1>
+            <p class="tagline">Tu colección personal de películas</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Movie Grid View -->
+            <section id="movieGrid" class="movie-grid">
+                <!-- Movies will be dynamically inserted here -->
+            </section>
+
+            <!-- Movie Detail View -->
+            <section id="movieDetail" class="movie-detail hidden">
+                <button id="backButton" class="back-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Volver
+                </button>
+
+                <div class="detail-content">
+                    <!-- Movie Info Above Video -->
+                    <div class="movie-info-header">
+                        <h2 id="movieTitle" class="movie-title"></h2>
+                        <div class="movie-meta">
+                            <span id="movieCategory" class="category-badge"></span>
+                        </div>
+                        <p id="movieDescription" class="movie-description"></p>
+                    </div>
+
+                    <!-- Video Player -->
+                    <div class="video-container">
+                        <iframe id="videoPlayer" allowfullscreen allow="autoplay">
+                        </iframe>
+                    </div>
+
+                    <!-- Download Button -->
+                    <div class="download-section">
+                        <a id="downloadButton" class="download-button" download>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Descargar Película
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 MisPelis - Colección Personal</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/movies.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
